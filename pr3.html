@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pr3.css">
+</head>
+<body>
+
+    <header>
+        <h4>dark mode</h4>
+        <div class="toggle-container">
+            <p >light</p>
+            <label class="switch">
+                <input type="checkbox" id="toggle">
+                <span class="slider round"></span>
+            </label>
+            <p>dark</p>
+        </div>
+    </header>
+    
+</body>
+<script>
+
+    const toggle = document.getElementById('toggle');
+
+    toggle.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode');
+});
+
+</script>
+</html>
